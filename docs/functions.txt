@@ -1,0 +1,10 @@
+Regisztráció: az alkalmazásba be lehet regisztrálni név, emailcím és jelszó megadásával
+Bejelentkezés: az alkalmazásba be lehet jelenikezni egy meglévő felhasználói fiókkal
+Új bejegyzés írása: a bejelentkezett felhasználó új bejegyzést hozhat létre, amit a többi felhasználó is lát
+Meglévő bejegyzés törlése: a felhasználó törölheti az előzőleg írt bejegyzését
+Meglévő bejegyzés módosítása: a felhasználó módosíthatja a korábban megírt bejegyzését
+Kijelentkezés: a bejelentkezett felhasználó ki tud jelentkezni a rendszerből a Logout gomb megnyomásával
+Profil szerkesztése: a felhasználó képes szerkeszteni a profilját, képet tölthet fel, rovid leírást adhat magáról, stb.
+Bejegyzések olvasása: az adott bejegyzésre kattintva a bejelentkezett felhasználó olvashatja mások bejegyzéseit
+Felhasználó követése: bármely felhasználó bejegyzései követhetőek a your feed oldalon
+Kedvenc megjelölése: bármelyik post megjelölhető kedvencként az oldalon

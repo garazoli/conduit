@@ -3,13 +3,17 @@ import string
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-import time
+# import time
 
 opt = Options()
 opt.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
+# Conduit megnyitása
+driver.get("http://localhost:1667")
+driver.maximize_window()
+driver.implicitly_wait(10)
 
 def test_reg():
     # Random username és email generálás
@@ -21,10 +25,6 @@ def test_reg():
             return "".join([random.choice(cls.chars) for _ in range(8)])
 
     random_user = MyRND.uname()
-
-    # Conduit megnyitása
-    driver.get("http://localhost:1667")
-    driver.implicitly_wait(10)
 
     # Sign up gombra kattintás
     driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[3]/a').click()

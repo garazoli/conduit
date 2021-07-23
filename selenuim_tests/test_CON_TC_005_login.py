@@ -8,11 +8,13 @@ opt.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
+# Conduit megnyitása
+driver.get("http://localhost:1667")
+driver.maximize_window()
+driver.implicitly_wait(10)
+
 
 def test_login():
-    # Conduit megnyitása
-    driver.get("http://localhost:1667")
-    driver.implicitly_wait(10)
 
     # Sign in gombra kattintás
     driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[2]/a').click()

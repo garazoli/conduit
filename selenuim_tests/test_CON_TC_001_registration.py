@@ -1,12 +1,14 @@
-import time
 import random
 import string
 from selenium import webdriver
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-# from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
-driver = webdriver.Chrome()
+opt = Options()
+opt.headless = False
+
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
 
 def test_reg():

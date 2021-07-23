@@ -1,11 +1,12 @@
-import time
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-# from webdriver_manager.chrome import ChromeDriverManager
+opt = Options()
+opt.headless = False
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
 
 def test_login():

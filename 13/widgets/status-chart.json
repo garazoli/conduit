@@ -1,0 +1,21 @@
+[ {
+  "uid" : "29f7f02d683e8c9d",
+  "name" : "test_reg",
+  "time" : {
+    "start" : 1627046825013,
+    "stop" : 1627046831529,
+    "duration" : 6516
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f6edf1d8d48c3f79",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1627046831675,
+    "stop" : 1627046836144,
+    "duration" : 4469
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

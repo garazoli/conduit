@@ -13,8 +13,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 # Conduit megnyitása
 driver.get("http://localhost:1667")
-driver.maximize_window()
-driver.implicitly_wait(3)
+driver.implicitly_wait(10)
 
 
 def test_new_post():
@@ -74,12 +73,14 @@ def test_new_post():
             next(csvreader)
             for row in csvreader:
                 data_list.append(row[data_list_row])
-
-        assert (data_list == posted_list)
-        driver.implicitly_wait(5)
+            driver.implicitly_wait(5)
+            assert (data_list == posted_list)
 
     assert_data(0, titles_list, posted_titles_list)
+    driver.implicitly_wait(5)
     assert_data(1, about_list, posted_about_list)
+    driver.implicitly_wait(5)
     assert_data(3, tag_list, posted_tag_list)
+    driver.implicitly_wait(5)
 
     driver.close()

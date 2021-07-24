@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Headless mode
 opt = Options()
-opt.headless = True
+opt.headless = False
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
@@ -48,7 +48,7 @@ def test_reg():
     driver.implicitly_wait(10)
 
     # A regisztráció sikerességének ellenőrzése
-    assert (driver.find_element_by_xpath('/html/body/div[2]/div/div[3]').text == 'Your registration was successful!')
+    assert (driver.find_element_by_xpath('/html/body/div[2]/div/div[2]').text == 'Welcome!')
 
     driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button').click()
     driver.implicitly_wait(10)
@@ -56,4 +56,6 @@ def test_reg():
     # Bejelentkezés után a felhasználónév ellenőrzése
     assert (driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').text == random_user)
 
-    driver.close()
+
+test_reg()
+    # driver.close()

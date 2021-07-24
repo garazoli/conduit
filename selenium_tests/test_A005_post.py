@@ -32,7 +32,7 @@ def test_new_post():
     driver.find_element_by_xpath('//a[@href="#/editor"]').click()
     driver.implicitly_wait(10)
 
-    with open('selenium_tests/data_in.csv', encoding='UTF-8') as csvfile:
+    with open('selenium_tests/post_data_in.csv', encoding='UTF-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=';')
         next(csvreader)
 
@@ -67,7 +67,7 @@ def test_new_post():
     tag_list = []
 
     def assert_data(data_list_row, data_list, posted_list):
-        with open('selenium_tests/data_in.csv', encoding='UTF-8') as csvfile:
+        with open('selenium_tests/post_data_in.csv', encoding='UTF-8') as csvfile:
             csvreader = csv.reader(csvfile, delimiter=';')
             next(csvreader)
             for row in csvreader:

@@ -56,6 +56,4 @@ def test_reg():
     # Bejelentkezés után a felhasználónév ellenőrzése
     assert (driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').text == random_user)
 
-
-test_reg()
-    # driver.close()
+    driver.close()

@@ -76,7 +76,7 @@ def test_new_post():
                 data_list.append(row[data_list_row])
 
         assert (data_list == posted_list)
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(5)
 
     assert_data(0, titles_list, posted_titles_list)
     assert_data(1, about_list, posted_about_list)

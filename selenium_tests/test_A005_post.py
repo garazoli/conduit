@@ -29,7 +29,7 @@ def test_new_post():
         'testuser1@example.com')
     driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input').send_keys('Abcd123$')
     driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(5)
 
     new_article = driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[2]/a')
     new_article.click()

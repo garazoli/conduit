@@ -15,7 +15,6 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 # Conduit megnyitása
 driver.get("http://localhost:1667")
-# driver.maximize_window()
 driver.implicitly_wait(2)
 
 

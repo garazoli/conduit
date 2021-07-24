@@ -30,8 +30,7 @@ def test_new_post():
     driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
     driver.implicitly_wait(10)
 
-    new_article = driver.find_element_by_xpath('//a[@href="#/editor"]')
-    new_article.click()
+    driver.find_element_by_xpath('//a[@href="#/editor"]').click()
     driver.implicitly_wait(10)
 
     a_title = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
@@ -51,7 +50,7 @@ def test_new_post():
             driver.implicitly_wait(3)
             driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
             driver.implicitly_wait(3)
-            new_article.click()
+            driver.find_element_by_xpath('//a[@href="#/editor"]').click()
             driver.implicitly_wait(3)
 
     driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[1]/a').click()

@@ -39,7 +39,7 @@ def test_new_post():
     a_article = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[3]/textarea')
     a_tag = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input')
 
-    with open('data_in.csv', encoding='UTF-8') as csvfile:
+    with open('selenium_tests/data_in.csv', encoding='UTF-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=';')
         next(csvreader)
 

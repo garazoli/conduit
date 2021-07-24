@@ -32,20 +32,19 @@ def test_new_post():
     driver.find_element_by_xpath('//a[@href="#/editor"]').click()
     driver.implicitly_wait(10)
 
-    a_title = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
-    a_about = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[2]/input')
-    a_article = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[3]/textarea')
-    a_tag = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input')
-
     with open('selenium_tests/data_in.csv', encoding='UTF-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=';')
         next(csvreader)
 
         for row in csvreader:
-            a_title.send_keys(row[0])
-            a_about.send_keys(row[1])
-            a_article.send_keys(row[2])
-            a_tag.send_keys(row[3])
+            driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input').send_keys(
+                row[0])
+            driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[2]/input').send_keys(
+                row[1])
+            driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[3]/textarea').send_keys(
+                row[2])
+            driver.find_element_by_xpath(
+                '//*[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input').send_keys(row[3])
             driver.implicitly_wait(3)
             driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
             driver.implicitly_wait(3)

@@ -4,7 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import csv
-import time
 
 # Headless mode
 opt = Options()
@@ -31,7 +30,7 @@ def test_new_post():
     driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
     driver.implicitly_wait(5)
 
-    new_article = driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[2]/a')
+    new_article = driver.find_element_by_xpath('//a[@href="#/editor"]')
     new_article.click()
     driver.implicitly_wait(3)
 

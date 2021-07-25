@@ -45,10 +45,11 @@ def test_reg():
     email.send_keys(random_user + '@example.com')
     password.send_keys('Abcd123$')
     sign_up_button.click()
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(10)
 
     # A regisztráció sikerességének ellenőrzése
-    assert (driver.find_element_by_xpath("//*[@class='swal-text']").text == 'Your registration was successful!')
+    popup_text = driver.find_element_by_xpath("//*[@class='swal-text']")
+    assert (popup_text.text == 'Your registration was successful!')
 
     driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button').click()
     driver.implicitly_wait(10)

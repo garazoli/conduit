@@ -33,7 +33,7 @@ def test_del_post():
     title_post = driver.find_element_by_xpath(
         '//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div[1]/a/h1')  # Az első elem címe
     title_post.click()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(20)
     driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div/div/span/button/span').click()
     driver.implicitly_wait(5)
 

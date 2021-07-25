@@ -35,7 +35,7 @@ def test_del_post():
     title_post.click()
     driver.implicitly_wait(10)
     driver.find_element_by_xpath("//button[@class='btn btn-outline-danger btn-sm']").click()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(10)
 
     # Elem törlésének ellenőrzése:
     driver.find_element_by_xpath('//a[@href="#/@testuser1/"]').click()  # Visszanavigálás a saját postok közé

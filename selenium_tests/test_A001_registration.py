@@ -52,7 +52,7 @@ def test_reg():
     assert (popup_text.text == 'Your registration was successful!')
 
     driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button').click()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     # Bejelentkezés után a felhasználónév ellenőrzése
     assert (driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').text == random_user)

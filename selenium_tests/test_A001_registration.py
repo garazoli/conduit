@@ -48,7 +48,7 @@ def test_reg():
     driver.implicitly_wait(20)
 
     # A regisztráció sikerességének ellenőrzése
-    assert (driver.find_element_by_xpath('/html/body/div[2]/div/div[2]').text == 'Welcome!')
+    assert (driver.find_element_by_xpath("//*[@class='swal-text']").text == 'Your registration was successful!')
 
     driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button').click()
     driver.implicitly_wait(10)

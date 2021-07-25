@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Sat Jul 24 17:31:27 GMT 2021","Sat Jul 24 17:31:29 GMT 2021","2144","selenium_tests","test_A001_registration","","","","test_reg",""
-"passed","Sat Jul 24 17:31:30 GMT 2021","Sat Jul 24 17:31:31 GMT 2021","887","selenium_tests","test_A003_reg_invalid_pwd","","","","test_reg_pwd",""
-"broken","Sat Jul 24 17:31:32 GMT 2021","Sat Jul 24 17:31:34 GMT 2021","1945","selenium_tests","test_A005_post","","","","test_new_post",""
-"passed","Sat Jul 24 17:31:29 GMT 2021","Sat Jul 24 17:31:30 GMT 2021","941","selenium_tests","test_A002_reg_invalid_email","","","","test_reg_email",""
-"passed","Sat Jul 24 17:31:31 GMT 2021","Sat Jul 24 17:31:32 GMT 2021","784","selenium_tests","test_A004_login","","","","test_login",""

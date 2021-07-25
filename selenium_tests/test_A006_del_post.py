@@ -28,7 +28,7 @@ def test_del_post():
     driver.implicitly_wait(5)
 
     # Törölni kívánt bejegyzés kiválasztása és törlése
-    driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').click()
+    driver.find_element_by_xpath('//a[@href="#/@testuser1/"]').click()
     driver.implicitly_wait(5)
     title_post = driver.find_element_by_xpath(
         '//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div[1]/a/h1')  # Az első elem címe
@@ -38,7 +38,7 @@ def test_del_post():
     driver.implicitly_wait(5)
 
     # Elem törlésének ellenőrzése:
-    driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').click()  # Visszanavigálás a saját postok közé
+    driver.find_element_by_xpath('//a[@href="#/@testuser1/"]').click()  # Visszanavigálás a saját postok közé
     driver.implicitly_wait(5)
     title_next_post = driver.find_element_by_xpath(
         '//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div[1]/a/h1')  # Az első elem címe a törlés után

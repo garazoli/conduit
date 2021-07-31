@@ -52,7 +52,7 @@ def test_reg():
     popup_text = driver.find_element_by_xpath(locators.reg_message_x)
     assert (popup_text.text == 'Welcome!')
 
-    locators.ok_button_x.click()
+    driver.find_element_by_xpath(locators.ok_button_x).click()
     driver.implicitly_wait(20)
 
     # Bejelentkezés után a felhasználónév ellenőrzése

@@ -35,6 +35,7 @@ first_post_x = '//*[@id="app"]/div/div[2]/div/div[1]/div[2]/div/div/div[1]/a/h1'
 
 delete_button_x = '//*[@id="app"]/div/div[1]/div/div/span/button/span'
 edit_button_x = "//a[@class='btn btn-sm btn-outline-secondary']"
+
 # Registration popup:
 
 reg_message_x = '/html/body/div[2]/div/div[2]'

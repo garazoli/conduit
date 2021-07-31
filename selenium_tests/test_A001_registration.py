@@ -5,6 +5,7 @@ import string
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+import locators
 
 # Headless mode
 opt = Options()
@@ -13,9 +14,9 @@ opt.headless = True
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
 # Conduit megnyitása
-driver.get("http://localhost:1667")
+driver.get(locators.CON_URL)
 driver.maximize_window()
-driver.implicitly_wait(10)
+driver.implicitly_wait(20)
 
 
 def test_reg():
@@ -30,14 +31,14 @@ def test_reg():
     random_user = MyRND.uname()
 
     # Sign up gombra kattintás
-    driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[3]/a').click()
+    driver.find_element_by_xpath(locators.sign_up_x).click()
     driver.implicitly_wait(10)
 
     # Kitöltendő mezők kinyerése
-    username = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[1]/input')
-    email = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input')
-    password = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[3]/input')
-    sign_up_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button')
+    username = driver.find_element_by_xpath(locators.username_x)
+    email = driver.find_element_by_xpath(locators.email_x)
+    password = driver.find_element_by_xpath(locators.password_x)
+    sign_up_button = driver.find_element_by_xpath(locators.sign_up_button_x)
     driver.implicitly_wait(10)
 
     # Mezők kitöltése tesztadatokkal
@@ -45,16 +46,16 @@ def test_reg():
     email.send_keys(random_user + '@example.com')
     password.send_keys('Abcd123$')
     sign_up_button.click()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     # A regisztráció sikerességének ellenőrzése
-    popup_text = driver.find_element_by_xpath("//*[@class='swal-text']")
-    assert (popup_text.text == 'Your registration was successful!')
+    popup_text = driver.find_element_by_xpath(locators.reg_message_x)
+    assert (popup_text.text == 'Welcome!')
 
-    driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button').click()
+    locators.ok_button_x.click()
     driver.implicitly_wait(20)
 
     # Bejelentkezés után a felhasználónév ellenőrzése
-    assert (driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[4]/a').text == random_user)
+    assert (driver.find_element_by_xpath(locators.user_x).text == random_user)
 
     driver.close()

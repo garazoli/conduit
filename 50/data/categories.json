@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_del_post",
+        "uid" : "c1df1817b7a4798e",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628012066731,
+          "stop" : 1628012068330,
+          "duration" : 1599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_post",
+        "uid" : "c3061d9652cc5d66",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628012068519,
+          "stop" : 1628012072550,
+          "duration" : 4031
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3bbc8ab00a88a9092e6b22350fcb56"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

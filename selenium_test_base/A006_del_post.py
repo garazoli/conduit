@@ -22,7 +22,7 @@ try:
     time.sleep(2)
 
     # Bejelentkezési adatok kitöltése
-    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser1@example.com')
+    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser2@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     time.sleep(2)

@@ -5,6 +5,7 @@ import string
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+import locators
 
 # Headless mode
 opt = Options()
@@ -13,7 +14,7 @@ opt.headless = True
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
 # Conduit megnyitása
-driver.get("http://localhost:1667")
+driver.get(locators.CON_URL)
 # driver.maximize_window()
 driver.implicitly_wait(10)
 
@@ -30,14 +31,14 @@ def test_reg_email():
     random_user = MyRND.uname()
 
     # Sign up gombra kattintás
-    driver.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[3]/a').click()
+    driver.find_element_by_xpath(locators.sign_up_x).click()
     driver.implicitly_wait(10)
 
     # Kitöltendő mezők kinyerése
-    username = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[1]/input')
-    email = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input')
-    password = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[3]/input')
-    sign_up_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button')
+    username = driver.find_element_by_xpath(locators.username_x)
+    email = driver.find_element_by_xpath(locators.email_x)
+    password = driver.find_element_by_xpath(locators.password_x)
+    sign_up_button = driver.find_element_by_xpath(locators.sign_up_button_x)
     driver.implicitly_wait(10)
 
     # Mezők kitöltése tesztadatokkal
@@ -48,6 +49,6 @@ def test_reg_email():
     driver.implicitly_wait(10)
 
     # A regisztráció sikerességének ellenőrzése
-    assert (driver.find_element_by_xpath('/html/body/div[2]/div/div[3]').text == 'Email must be a valid email.')
+    assert (driver.find_element_by_xpath(locators.reg_fail_message_x).text == 'Email must be a valid email.')
 
     driver.close()

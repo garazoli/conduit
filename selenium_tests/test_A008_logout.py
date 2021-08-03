@@ -22,12 +22,12 @@ def test_logout():
     driver.implicitly_wait(10)
 
     # Bejelentkezési adatok kitoltése
-    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser5@example.com')
+    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser1@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     driver.implicitly_wait(20)
 
-    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser5')
+    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser1')
 
     # Kijelentkezés
 

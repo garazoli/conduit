@@ -22,12 +22,11 @@ def test_login():
     driver.implicitly_wait(10)
 
     # Bejelentkezési adatok kitöltése
-    driver.find_element_by_xpath(locators.si_email_x).send_keys(
-        'testuser1@example.com')
+    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser2@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     driver.implicitly_wait(10)
 
-    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser1')
+    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser2')
 
     driver.close()

@@ -32,7 +32,7 @@ def test_del_post():
     driver.implicitly_wait(10)
     title_post = driver.find_element_by_xpath(locators.first_post_x)  # Az első elem címe
     title_post.click()
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(30)
     driver.find_element_by_xpath(locators.delete_button_x).click()
     driver.implicitly_wait(10)
 

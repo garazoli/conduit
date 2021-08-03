@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+      "children" : [ {
+        "name" : "test_reg",
+        "uid" : "165a5f1a4fb50c1a",
+        "parentUid" : "6f3379886b2a955961fe4fcfcc38a573",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628011517548,
+          "stop" : 1628011521344,
+          "duration" : 3796
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f3379886b2a955961fe4fcfcc38a573"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_del_post",
+        "uid" : "631168a2dbb160b0",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628011528163,
+          "stop" : 1628011529279,
+          "duration" : 1116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_post",
+        "uid" : "dc85dbacf277477a",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628011529323,
+          "stop" : 1628011530423,
+          "duration" : 1100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3bbc8ab00a88a9092e6b22350fcb56"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "7e426ecb96f916d2",
+        "parentUid" : "a8d67808bd95d1d05a1d514626ce762d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628011530456,
+          "stop" : 1628011550734,
+          "duration" : 20278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a8d67808bd95d1d05a1d514626ce762d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

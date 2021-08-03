@@ -39,16 +39,16 @@ def test_edit_post():
 
         for row in csvreader:
             driver.find_element_by_xpath(locators.user_x).click()
-            driver.implicitly_wait(5)
+            driver.implicitly_wait(10)
             driver.find_element_by_xpath(locators.first_post_x).click()
-            driver.implicitly_wait(5)
+            driver.implicitly_wait(10)
             driver.find_element_by_xpath(locators.edit_button_x).click()
-            driver.implicitly_wait(5)
+            driver.implicitly_wait(10)
             fill_and_clear_form(locators.title_x).send_keys(row[0])
             fill_and_clear_form(locators.about_x).send_keys(row[1])
             fill_and_clear_form(locators.article_x).send_keys(row[2])
             driver.find_element_by_xpath(locators.publish_button_x).click()
-            driver.implicitly_wait(5)
+            driver.implicitly_wait(10)
 
     driver.find_element_by_xpath(locators.user_x).click()
     driver.implicitly_wait(10)

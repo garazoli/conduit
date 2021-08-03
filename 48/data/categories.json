@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_del_post",
+        "uid" : "d19950f0dd249917",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628010916329,
+          "stop" : 1628010917488,
+          "duration" : 1159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_post",
+        "uid" : "168ffab2ef24db96",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628010917574,
+          "stop" : 1628010918749,
+          "duration" : 1175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3bbc8ab00a88a9092e6b22350fcb56"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "ca97f74ba6abd556",
+        "parentUid" : "a8d67808bd95d1d05a1d514626ce762d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628010918782,
+          "stop" : 1628010929098,
+          "duration" : 10316
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a8d67808bd95d1d05a1d514626ce762d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

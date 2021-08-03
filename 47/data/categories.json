@@ -1,0 +1,64 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+      "children" : [ {
+        "name" : "test_reg",
+        "uid" : "7f073e7cfd3fb327",
+        "parentUid" : "6f3379886b2a955961fe4fcfcc38a573",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628009905092,
+          "stop" : 1628009908150,
+          "duration" : 3058
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f3379886b2a955961fe4fcfcc38a573"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_del_post",
+        "uid" : "54f4a4e30993f445",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628009914529,
+          "stop" : 1628009915750,
+          "duration" : 1221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3bbc8ab00a88a9092e6b22350fcb56"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/nav/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "31c340b442926507",
+        "parentUid" : "a8d67808bd95d1d05a1d514626ce762d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628009962443,
+          "stop" : 1628009966702,
+          "duration" : 4259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a8d67808bd95d1d05a1d514626ce762d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

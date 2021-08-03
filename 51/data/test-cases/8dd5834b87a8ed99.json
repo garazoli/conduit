@@ -1,0 +1,254 @@
+{
+  "uid" : "8dd5834b87a8ed99",
+  "name" : "test_reg",
+  "fullName" : "selenium_tests.test_A001_registration#test_reg",
+  "historyId" : "a97c9e4c1f23c711b87b6900c19d02b1",
+  "time" : {
+    "start" : 1628012486358,
+    "stop" : 1628012489810,
+    "duration" : 3452
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "selenium_tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_A001_registration"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-815"
+  }, {
+    "name" : "thread",
+    "value" : "3885-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selenium_tests.test_A001_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 12,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 18,
+        "unknown" : 0,
+        "total" : 31
+      },
+      "items" : [ {
+        "uid" : "1287e39433509465",
+        "reportUrl" : "https://garazoli.github.io/conduit/50//#testresult/1287e39433509465",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628012055860,
+          "stop" : 1628012059287,
+          "duration" : 3427
+        }
+      }, {
+        "uid" : "165a5f1a4fb50c1a",
+        "reportUrl" : "https://garazoli.github.io/conduit/49//#testresult/165a5f1a4fb50c1a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+        "time" : {
+          "start" : 1628011517548,
+          "stop" : 1628011521344,
+          "duration" : 3796
+        }
+      }, {
+        "uid" : "b2a4aa5155410c04",
+        "reportUrl" : "https://garazoli.github.io/conduit/48//#testresult/b2a4aa5155410c04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628010905380,
+          "stop" : 1628010909543,
+          "duration" : 4163
+        }
+      }, {
+        "uid" : "7f073e7cfd3fb327",
+        "reportUrl" : "https://garazoli.github.io/conduit/47//#testresult/7f073e7cfd3fb327",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+        "time" : {
+          "start" : 1628009905092,
+          "stop" : 1628009908150,
+          "duration" : 3058
+        }
+      }, {
+        "uid" : "abe1251bc16909f2",
+        "reportUrl" : "https://garazoli.github.io/conduit/46//#testresult/abe1251bc16909f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627752756159,
+          "stop" : 1627752759088,
+          "duration" : 2929
+        }
+      }, {
+        "uid" : "a7efca99d6335a2d",
+        "reportUrl" : "https://garazoli.github.io/conduit/45//#testresult/a7efca99d6335a2d",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: 'str' object has no attribute 'click'",
+        "time" : {
+          "start" : 1627752253761,
+          "stop" : 1627752256701,
+          "duration" : 2940
+        }
+      }, {
+        "uid" : "314bea5c2808aaf2",
+        "reportUrl" : "https://garazoli.github.io/conduit/44//#testresult/314bea5c2808aaf2",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+        "time" : {
+          "start" : 1627207009631,
+          "stop" : 1627207010160,
+          "duration" : 529
+        }
+      }, {
+        "uid" : "a34a355f7b0059c2",
+        "reportUrl" : "https://garazoli.github.io/conduit/43//#testresult/a34a355f7b0059c2",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+        "time" : {
+          "start" : 1627206487163,
+          "stop" : 1627206487562,
+          "duration" : 399
+        }
+      }, {
+        "uid" : "40d5e76e40a99c79",
+        "reportUrl" : "https://garazoli.github.io/conduit/42//#testresult/40d5e76e40a99c79",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+        "time" : {
+          "start" : 1627205964326,
+          "stop" : 1627205964917,
+          "duration" : 591
+        }
+      }, {
+        "uid" : "a081797f0646f8a9",
+        "reportUrl" : "https://garazoli.github.io/conduit/41//#testresult/a081797f0646f8a9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+        "time" : {
+          "start" : 1627205526728,
+          "stop" : 1627205529363,
+          "duration" : 2635
+        }
+      }, {
+        "uid" : "cdff17401882edc5",
+        "reportUrl" : "https://garazoli.github.io/conduit/40//#testresult/cdff17401882edc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627205236703,
+          "stop" : 1627205240234,
+          "duration" : 3531
+        }
+      }, {
+        "uid" : "c6e3b80e03a3b072",
+        "reportUrl" : "https://garazoli.github.io/conduit/39//#testresult/c6e3b80e03a3b072",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627204699039,
+          "stop" : 1627204702115,
+          "duration" : 3076
+        }
+      }, {
+        "uid" : "31ee3fabe3065d5f",
+        "reportUrl" : "https://garazoli.github.io/conduit/38//#testresult/31ee3fabe3065d5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627204205619,
+          "stop" : 1627204208429,
+          "duration" : 2810
+        }
+      }, {
+        "uid" : "ede8a64ad6bc9bf6",
+        "reportUrl" : "https://garazoli.github.io/conduit/37//#testresult/ede8a64ad6bc9bf6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+        "time" : {
+          "start" : 1627203451314,
+          "stop" : 1627203453360,
+          "duration" : 2046
+        }
+      }, {
+        "uid" : "66e1cec3249e8ceb",
+        "reportUrl" : "https://garazoli.github.io/conduit/36//#testresult/66e1cec3249e8ceb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627162130319,
+          "stop" : 1627162133867,
+          "duration" : 3548
+        }
+      }, {
+        "uid" : "97cb15af5aea18b5",
+        "reportUrl" : "https://garazoli.github.io/conduit/35//#testresult/97cb15af5aea18b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627157084826,
+          "stop" : 1627157087646,
+          "duration" : 2820
+        }
+      }, {
+        "uid" : "dd41372bc46b93f",
+        "reportUrl" : "https://garazoli.github.io/conduit/34//#testresult/dd41372bc46b93f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+        "time" : {
+          "start" : 1627156587078,
+          "stop" : 1627156589125,
+          "duration" : 2047
+        }
+      }, {
+        "uid" : "1bf7a8b4e825bb7d",
+        "reportUrl" : "https://garazoli.github.io/conduit/33//#testresult/1bf7a8b4e825bb7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627152830658,
+          "stop" : 1627152833941,
+          "duration" : 3283
+        }
+      }, {
+        "uid" : "ba19f7b95a036de8",
+        "reportUrl" : "https://garazoli.github.io/conduit/32//#testresult/ba19f7b95a036de8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627152248822,
+          "stop" : 1627152252023,
+          "duration" : 3201
+        }
+      }, {
+        "uid" : "fa01443824767fe2",
+        "reportUrl" : "https://garazoli.github.io/conduit/29//#testresult/fa01443824767fe2",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+        "time" : {
+          "start" : 1627150785978,
+          "stop" : 1627150788821,
+          "duration" : 2843
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8dd5834b87a8ed99.json",
+  "parameterValues" : [ ]
+}

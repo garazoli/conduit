@@ -1,0 +1,53 @@
+{
+  "uid" : "35a768be2a76b418",
+  "name" : "test_edit_username",
+  "fullName" : "selenium_tests.test_A009_edit_username#test_edit_username",
+  "historyId" : "40ac44e57302deae223ef9b73f08790f",
+  "time" : {
+    "start" : 1628087552325,
+    "stop" : 1628087623266,
+    "duration" : 70941
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "selenium_tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_A009_edit_username"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-440"
+  }, {
+    "name" : "thread",
+    "value" : "3667-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selenium_tests.test_A009_edit_username"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "35a768be2a76b418.json",
+  "parameterValues" : [ ]
+}

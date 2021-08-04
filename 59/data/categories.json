@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+      "children" : [ {
+        "name" : "test_reg",
+        "uid" : "64569f60150bf886",
+        "parentUid" : "6f3379886b2a955961fe4fcfcc38a573",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628086642887,
+          "stop" : 1628086645878,
+          "duration" : 2991
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f3379886b2a955961fe4fcfcc38a573"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/@testuser1/\" class=\"nav-link\">...</a> is not clickable at point (623, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_post",
+        "uid" : "2b044af83fdbb0f5",
+        "parentUid" : "cd390fdf1dfc23f182ac340bd5c5ab1c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628086773299,
+          "stop" : 1628086997407,
+          "duration" : 224108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd390fdf1dfc23f182ac340bd5c5ab1c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

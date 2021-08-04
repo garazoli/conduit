@@ -6,6 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import csv
 import time
 import locators
+
 # Headless mode
 opt = Options()
 opt.headless = False
@@ -23,11 +24,16 @@ try:
     time.sleep(2)
 
     # Bejelentkezési adatok kitöltése
-    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser4@example.com')
+    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser1@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     time.sleep(3)
 
+    driver.find_element_by_xpath(locators.user_x).click()
+    time.sleep(2)
+
+    # Eredeti postok kigyűjtése
+    original_posts_list = driver.find_elements_by_xpath('//h1')
 
     def fill_and_clear_form(xpath):
         element = driver.find_element_by_xpath(xpath)
@@ -55,9 +61,16 @@ try:
     driver.find_element_by_xpath(locators.user_x).click()
     time.sleep(2)
 
+    # Szerkesztett postok kigyujtese:
+    edited_posts_list = driver.find_elements_by_xpath('//h1')
+
+    # Annak ellenőrzése, hogy a postok szerkesztése után is ugyanannyi post van-e.
+    assert len(original_posts_list) == len(edited_posts_list)
+
     with open('edit_data_out.csv', 'w', encoding='UTF-8')as f:
         f.write('Title;About;Article' + '\n')
 
+    # Uj bejegyzesek (title, about, article) kiirasa fileba:
     def collect_edited_posts_and_write_to_file(l_index):
         edited_titles_list = driver.find_elements_by_xpath('//h1')
         edited_abouts_list = driver.find_elements_by_xpath('//a/p')

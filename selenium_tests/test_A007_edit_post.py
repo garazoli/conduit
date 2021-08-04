@@ -13,21 +13,27 @@ opt.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
-# Conduit megnyit�sa
+# Conduit megnyitása
 driver.get(locators.CON_URL)
 
 
 def test_edit_post():
-    # Bejelentkez�s
-    # Sign in gombra kattint�s
+    # Bejelentkezés
+    # Sign in gombra kattintás
     driver.find_element_by_xpath(locators.sign_in_x).click()
     time.sleep(20)
 
-    # Bejelentkez�si adatok kit�lt�se
+    # Bejelentkezési adatok kitöltése
     driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser1@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     time.sleep(20)
+
+    driver.find_element_by_xpath(locators.user_x).click()
+    time.sleep(20)
+
+    # Eredeti postok kigyűjtése
+    original_posts_list = driver.find_elements_by_xpath('//h1')
 
     def fill_and_clear_form(xpath):
         element = driver.find_element_by_xpath(xpath)
@@ -54,9 +60,16 @@ def test_edit_post():
     driver.find_element_by_xpath(locators.user_x).click()
     time.sleep(20)
 
+    # Szerkesztett postok kigyujtese:
+    edited_posts_list = driver.find_elements_by_xpath('//h1')
+
+    # Annak ellenőrzése, hogy a postok szerkesztése után is ugyanannyi post van-e.
+    assert len(original_posts_list) == len(edited_posts_list)
+
     with open('selenium_tests/edit_data_out.csv', 'w', encoding='UTF-8') as f:
         f.write('Title;About;Article' + '\n')
 
+    # Uj bejegyzesek (title, about, article) kiirasa fileba:
     def collect_edited_posts_and_write_to_file(l_index):
         edited_titles_list = driver.find_elements_by_xpath('//h1')
         edited_abouts_list = driver.find_elements_by_xpath('//a/p')

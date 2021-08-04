@@ -33,3 +33,5 @@ def cookies():
 
     buttons = driver.find_elements_by_xpath('//button')
     assert buttons == []
+
+    driver.close()

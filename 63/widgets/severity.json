@@ -1,0 +1,131 @@
+[ {
+  "uid" : "e3e039974ca876d6",
+  "name" : "test_edit_post",
+  "time" : {
+    "start" : 1628087882336,
+    "stop" : 1628088327153,
+    "duration" : 444817
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3327d5d87aa6bb51",
+  "name" : "test_new_post",
+  "time" : {
+    "start" : 1628087757948,
+    "stop" : 1628087761701,
+    "duration" : 3753
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28cfc7f1367e4716",
+  "name" : "test_edit_username",
+  "time" : {
+    "start" : 1628088328179,
+    "stop" : 1628088399043,
+    "duration" : 70864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7693499fedacf74a",
+  "name" : "test_reg",
+  "time" : {
+    "start" : 1628087751922,
+    "stop" : 1628087755172,
+    "duration" : 3250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8af7373b66459d60",
+  "name" : "test_edit_password",
+  "time" : {
+    "start" : 1628088399045,
+    "stop" : 1628088500215,
+    "duration" : 101170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "759b0c9b505956ce",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628087757147,
+    "stop" : 1628087757946,
+    "duration" : 799
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa0dabab1bc7a014",
+  "name" : "test_reg_pwd",
+  "time" : {
+    "start" : 1628087756163,
+    "stop" : 1628087757146,
+    "duration" : 983
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "983eb978f2d26b09",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628088550832,
+    "stop" : 1628088731593,
+    "duration" : 180761
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "27180404b0a16a11",
+  "name" : "test_del_post",
+  "time" : {
+    "start" : 1628087761703,
+    "stop" : 1628087882333,
+    "duration" : 120630
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "682cd126c46e53c3",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628087741553,
+    "stop" : 1628087751919,
+    "duration" : 10366
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9e365fef6f81853",
+  "name" : "test_reg_email",
+  "time" : {
+    "start" : 1628087755174,
+    "stop" : 1628087756160,
+    "duration" : 986
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88492194cc4a0b99",
+  "name" : "test_edit_email",
+  "time" : {
+    "start" : 1628088500217,
+    "stop" : 1628088550795,
+    "duration" : 50578
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "629016dc34482d65",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628088327155,
+    "stop" : 1628088328177,
+    "duration" : 1022
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'testuser2@example.com' == 'newemail@example.com'\n  - newemail@example.com\n  + testuser2@example.com",
+      "children" : [ {
+        "name" : "test_edit_email",
+        "uid" : "88492194cc4a0b99",
+        "parentUid" : "7b25658b6ba003f0fda3b5015677095f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628088500217,
+          "stop" : 1628088550795,
+          "duration" : 50578
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b25658b6ba003f0fda3b5015677095f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"#/editor\" class=\"nav-link\">...</a> is not clickable at point (445, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_pagination",
+        "uid" : "983eb978f2d26b09",
+        "parentUid" : "444d6676fe10f4d23e0a77ffa8e5702e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628088550832,
+          "stop" : 1628088731593,
+          "duration" : 180761
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "444d6676fe10f4d23e0a77ffa8e5702e"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

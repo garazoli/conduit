@@ -1,15 +1,16 @@
+A000, CON_TC_000, felület automatizálás, mert kritikus fontosságú teszt
 A001, CON_TC_001, felület automatizálás, mert ismételt végrehajtást tartalmaz és mert magas prioritású
 A002, CON_TC_002, felület automatizálás, mert kritikus fontosságú teszt
 A003, CON_TC_003, felület automatizálás, mert biztonsági szempontból kritikus fontosságú teszt
 A004, CON_TC_005, felület automatizálás, mert ismételt végrehajtást tartalmaz, és fontos, alapvető funkciót tesztel
-A005, CON_TC_009, felület automatizálás, mert nagy adatbevitellel jár, és alapvető funkciót tesztel
+A005, CON_TC_009, felület automatizálás, mert jelentős adatbevitellel jár, és alapvető funkciót tesztel
 A006, CON_TC_014, felület automatizálás, mert fontos, alapvető funkciót tesztel
-A007, CON_TC_016, felület automatizálás, mert nagy adatbevitellel jár, és alapvető funkciót tesztel
+A007, CON_TC_016, felület automatizálás, mert jelentős adatbevitellel jár, és alapvető funkciót tesztel
 A008, CON_TC_017, felület automatizálás, mert fontos biztonsági funkciót tesztel
 A009, CON_TC_019, felület automatizálás, mert ismételt végrehajtást tartalmaz, és jelentős adatbevitellel jár
 A010, CON_TC_020, felület automatizálás, mert fontos biztonsági funkciót tesztel, és ismételt végrehajtást tartalmaz
 A011, CON_TC_021, felület automatizálás, mert fontos biztonsági funkciót tesztel, és ismételt végrehajtást tartalmaz
-A012, CON_TC_010, felület automatizálás, mert jelentős adatbevitellel jár
+A012, CON_TC_010, nem automatizálnám, mert nem jellemző felhasználói viselkedést mintáz és nem jár jelentős adatbevitellel
 A013, CON_TC_004, nem automatizálnám, mert nem jellemző felhasználói viselkedést mintáz
 A014, CON_TC_006, nem automatizálnám, mert nem jellemző felhasználói viselkedést mintáz és nem jár jelentős adatbevitellel
 A015, CON_TC_007, nem automatizálnám, mert nem jellemző felhasználói viselkedést mintáz és nem jár jelentős adatbevitellel
@@ -22,3 +23,4 @@ A021, CON_TC_018, nem automatizálnám, mert nem olyan fontos teszteset
 A022, CON_TC_022, nem automatizálnám, mert nem olyan fontos teszteset
 A023, CON_TC_023, nem automatizálnám, mert nem olyan fontos teszteset
 A024, CON_TC_024, nem automatizálnám, mert nem olyan fontos teszteset
+A025, CON_TC_025, felület automatizálás, mert jelentős adatbevitellel jár, és alapvető funkciót tesztel

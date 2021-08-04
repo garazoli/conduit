@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'testuser2@example.com' == 'newemail@example.com'\n  - newemail@example.com\n  + testuser2@example.com",
+      "children" : [ {
+        "name" : "test_edit_email",
+        "uid" : "5932231a44211f55",
+        "parentUid" : "7b25658b6ba003f0fda3b5015677095f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628088488652,
+          "stop" : 1628088539240,
+          "duration" : 50588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b25658b6ba003f0fda3b5015677095f"
+    }, {
+      "name" : "AssertionError: assert 75 == 30\n +  where 75 = len(['In nisl nisi scelerisque eu', 'Eget mi proin sed libero', 'Nunc porttitor', 'Mauris pretium', 'Fusce auctor', 'Sed ut odio', ...])\n +  and   30 = len({'Dui lentesque', 'Duis pellentesque', 'Eget mi proin sed libero', 'Fus tor', 'Fusce auctor', 'In nisl nisi scelerisque eu', ...})\n +    where {'Dui lentesque', 'Duis pellentesque', 'Eget mi proin sed libero', 'Fus tor', 'Fusce auctor', 'In nisl nisi scelerisque eu', ...} = set(['In nisl nisi scelerisque eu', 'Eget mi proin sed libero', 'Nunc porttitor', 'Mauris pretium', 'Fusce auctor', 'Sed ut odio', ...])",
+      "children" : [ {
+        "name" : "test_pagination",
+        "uid" : "91c670b37808956",
+        "parentUid" : "c62503adc9b857940d7c68dfb7c5b637",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628088539275,
+          "stop" : 1628089026258,
+          "duration" : 486983
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c62503adc9b857940d7c68dfb7c5b637"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

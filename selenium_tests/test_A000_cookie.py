@@ -17,7 +17,7 @@ driver.get(locators.CON_URL)
 time.sleep(5)
 
 
-def cookies():
+def test_cookies():
     # A cookie policy panel megjelenésének ellnőrzése:
     assert driver.find_element_by_id(locators.cookie_panel).is_displayed()
 

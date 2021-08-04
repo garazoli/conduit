@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'testuser2@example.com' == 'newemail@example.com'\n  - newemail@example.com\n  + testuser2@example.com",
+      "children" : [ {
+        "name" : "test_edit_email",
+        "uid" : "cd6de6254809e3f7",
+        "parentUid" : "7b25658b6ba003f0fda3b5015677095f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628088199365,
+          "stop" : 1628088249906,
+          "duration" : 50541
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b25658b6ba003f0fda3b5015677095f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

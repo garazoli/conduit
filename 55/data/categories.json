@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Welcome!'\n  - Welcome!",
+      "children" : [ {
+        "name" : "test_reg",
+        "uid" : "b89aaecd79e7d6bd",
+        "parentUid" : "6f3379886b2a955961fe4fcfcc38a573",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628085653555,
+          "stop" : 1628085656261,
+          "duration" : 2706
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f3379886b2a955961fe4fcfcc38a573"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class='btn btn-sm btn-outline-secondary']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_post",
+        "uid" : "80fb26d4a48f9c24",
+        "parentUid" : "0c561ea30b8ee9156a24c3e654bf0755",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628085783845,
+          "stop" : 1628085864301,
+          "duration" : 80456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0c561ea30b8ee9156a24c3e654bf0755"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

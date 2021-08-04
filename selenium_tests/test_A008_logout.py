@@ -11,31 +11,31 @@ opt.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=opt)
 
-# Conduit megnyit·sa
+# Conduit megnyit√°sa
 driver.get(locators.CON_URL)
 driver.implicitly_wait(20)
 
 
 def test_logout():
-    # Sign in gombra kattint·s
+    # Sign in gombra kattint√°s
     driver.find_element_by_xpath(locators.sign_in_x).click()
     driver.implicitly_wait(10)
 
-    # BejelentkezÈsi adatok kitoltÈse
-    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser1@example.com')
+    # Bejelentkez√©si adatok kitolt√©se
+    driver.find_element_by_xpath(locators.si_email_x).send_keys('testuser4@example.com')
     driver.find_element_by_xpath(locators.si_password_x).send_keys('Abcd123$')
     driver.find_element_by_xpath(locators.sign_in_button_x).click()
     driver.implicitly_wait(20)
 
-    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser1')
+    assert (driver.find_element_by_xpath(locators.user_x).text == 'testuser4')
 
-    # KijelentkezÈs
+    # Kijelentkez√©s
 
     target_link = driver.find_element_by_xpath(locators.user_x)
     driver.find_element_by_xpath(locators.log_out_x).click()
     driver.implicitly_wait(10)
 
-    # KijelentkezÈs ellenırzÈse
+    # Kijelentkez√©s ellen√∂rz√©se
     links = driver.find_elements_by_xpath("//a[starts-with(@class, 'nav-link')]")
 
     assert (target_link not in links)
